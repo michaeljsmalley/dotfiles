@@ -1,14 +1,18 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Theme/Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256             " enable 256-color mode.
 syntax enable            " enable syntax highlighting (previously syntax on).
-
+colorscheme desert256        " set colorscheme
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text Formatting/Layout
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 set ai                   " auto-indent
 set tabstop=4            " tab spacing
 set softtabstop=4        " unify
