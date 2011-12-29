@@ -1,4 +1,4 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
@@ -8,7 +8,7 @@ set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256             " enable 256-color mode.
 syntax enable            " enable syntax highlighting (previously syntax on).
-colorscheme desert256        " set colorscheme
+colorscheme desert256    " set colorscheme
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text Formatting/Layout
@@ -21,6 +21,9 @@ set shiftround           " always indent/outdent to the nearest tabstop
 set expandtab            " use spaces instead of tabs
 set smarttab             " use tabs at the start of a line, spaces elsewhere
 set nowrap               " don't wrap text
+
+" In Makefiles DO NOT use spaces instead of tabs
+autocmd FileType make setlocal noexpandtab
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim UI
