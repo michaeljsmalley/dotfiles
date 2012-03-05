@@ -30,7 +30,7 @@ autocmd FileType make setlocal noexpandtab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
-colorscheme desert        " set colorscheme
+colorscheme molokai       " set colorscheme
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 04. Vim UI                                                                 "
