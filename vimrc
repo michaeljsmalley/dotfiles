@@ -38,6 +38,9 @@ colorscheme molokai       " set colorscheme
 autocmd BufRead,BufNewFile *.json set filetype=json
 autocmd Syntax json sou ~/.vim/syntax/json.vim
 
+" Prettify Vagrantfile
+autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 04. Vim UI                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
