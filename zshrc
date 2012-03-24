@@ -27,7 +27,13 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git osx)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.private
+if [ -f $HOME/.private ]; then
+    source $HOME/.private
+fi
+
+if [ -f $HOME/.profile ]; then
+    source $HOME/.profile  # Read Mac .profile, if present.
+fi
 
 # Shell Aliases
 ## Git Aliases
