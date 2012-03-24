@@ -43,7 +43,6 @@ autocmd Syntax json sou ~/.vim/syntax/json.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number                " show line numbers
 set laststatus=2          " last window always has a statusline
-filetype indent on        " activates indenting for files
 set nohlsearch            " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
 set ignorecase            " Make searches case-insensitive.
