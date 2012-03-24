@@ -16,6 +16,7 @@ hasn't, it runs a `chsh -s $(which zsh)` (changes take effect on subsequent
 login).
 
 So, to recap, the install script will:
+
 1. Back up any existing dotfiles in your home directory to `~/dotfiles_old/`
 2. Create symlinks to the dotfiles in `~/dotfiles/` in your home directory
 3. Clone the oh-my-zsh repository from my GitHub (for use with zsh)
