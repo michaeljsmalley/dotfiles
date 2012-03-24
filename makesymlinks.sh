@@ -32,12 +32,14 @@ done
 
 function install_zsh {
 # Test to see if zshell is installed
-if [[ -f /bin/zsh || /usr/bin/zsh ]]; then
+if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
     # Clone my oh-my-zsh repository from GitHub only if it isn't already present
     if [[ ! -d $dir/oh-my-zsh/ ]]; then
         git clone http://github.com/michaeljsmalley/oh-my-zsh.git
     fi
-    chsh -s $(which zsh)
+    if [[ ! $(echo $SHELL) == $(which zsh) ]]; then
+        chsh -s $(which zsh)
+    fi
 else
     platform=$(uname);
     if [[ $platform == 'Linux' ]]; then
