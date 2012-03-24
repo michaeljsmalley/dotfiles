@@ -29,3 +29,25 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+function install_zsh {
+# Test to see if zshell is installed
+if [[ -f /bin/zsh || /usr/bin/zsh ]]; then
+    # Clone my oh-my-zsh repository from GitHub only if it isn't already present
+    if [[ ! -d $dir/oh-my-zsh/ ]]; then
+        git clone http://github.com/michaeljsmalley/oh-my-zsh.git
+    fi
+    chsh -s $(which zsh)
+else
+    platform=$(uname);
+    if [[ $platform == 'Linux' ]]; then
+        sudo apt-get install zsh
+        install_zsh
+    elif [[ $platform == 'Darwin' ]]; then
+        echo "Please install zsh, then re-run this script!"
+        exit
+    fi
+fi
+}
+
+install_zsh
