@@ -27,6 +27,8 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git osx)
 
 source $ZSH/oh-my-zsh.sh
+
+# Put any proprietary or private functions/values in ~/.private, and this will source them
 if [ -f $HOME/.private ]; then
     source $HOME/.private
 fi
@@ -47,3 +49,9 @@ alias gk='gitk --all&'
 alias gx='gitx --all'
 alias got='git '
 alias get='git '
+
+# qfind - used to quickly find files that contain a string in a directory
+qfind () {
+    find . -exec grep -l $1 {} \;
+    return 0
+}
