@@ -45,6 +45,7 @@ autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
 " 04. Vim UI                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number                " show line numbers
+set cul                   " highlight current line
 set laststatus=2          " last window always has a statusline
 set nohlsearch            " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
