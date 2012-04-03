@@ -55,3 +55,9 @@ qfind () {
     find . -exec grep -l $1 {} \;
     return 0
 }
+
+# Custom exports
+## Set EDITOR to /usr/bin/vim if Vim is installed
+if [ -f /usr/bin/vim ]; then
+    export EDITOR=/usr/bin/vim
+fi
