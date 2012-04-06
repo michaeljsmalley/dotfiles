@@ -56,11 +56,4 @@ else
 fi
 }
 
-function curl_vim_jellybeans_colorscheme {
-    curl -C -O https://raw.github.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim -o ~/dotfiles/vim/colors/jellybeans.vim
-    exit
-}
-
 install_zsh
-
-curl_vim_jellybeans_colorscheme
