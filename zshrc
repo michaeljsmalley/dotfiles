@@ -53,12 +53,16 @@ alias gk='gitk --all&'
 alias gx='gitx --all'
 alias got='git '
 alias get='git '
-alias htop='sudo htop'
+
+## Vagrant Aliases
 alias vag='vagrant'
 alias vagup='vagrant up'
 alias vagdestroy='vagrant destroy'
 alias vagssh='vagrant ssh'
 alias vaghalt='vagrant halt'
+
+## Miscellaneous Aliases
+alias htop='sudo htop'
 
 # Shell Functions
 # qfind - used to quickly find files that contain a string in a directory
