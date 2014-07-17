@@ -76,3 +76,8 @@ qfind () {
 if [ -f /usr/bin/vim ]; then
   export EDITOR=/usr/bin/vim
 fi
+
+# Open Sublime text
+alias subl="'/Applications/Sublime Text 3.app/Contents/SharedSupport/bin/subl'"
+alias nano="subl"
+export EDITOR="subl"
