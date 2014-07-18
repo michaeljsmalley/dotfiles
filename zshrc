@@ -41,6 +41,14 @@ if [ -f $HOME/.profile ]; then
 fi
 
 # Shell Aliases
+#filesystem
+# Filesystem
+alias ..='cd ..'            # Go up one directory
+alias ...='cd ../..'        # Go up two directories
+alias ....='cd ../../..'    # And for good measure
+alias l='ls -lah'
+alias la='ls -AF'
+
 ## Git Aliases
 alias gs='git status '
 alias ga='git add '
@@ -52,6 +60,8 @@ alias gk='gitk --all&'
 alias gx='gitx --all'
 alias got='git '
 alias get='git '
+alias gdpl='git daily pull'
+alias gdpu='git daily push'
 
 # qfind - used to quickly find files that contain a string in a directory
 qfind () {
@@ -66,6 +76,9 @@ if [ -f /usr/bin/vim ]; then
 fi
 
 # Open Sublime text
-alias subl="'/Applications/Sublime Text 3.app/Contents/SharedSupport/bin/subl'"
+alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 alias nano="subl"
 export EDITOR="subl"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
