@@ -63,6 +63,9 @@ alias get='git '
 alias gdpl='git daily pull'
 alias gdpu='git daily push'
 
+#alias for Octopress
+alias rake="noglob rake"
+
 # qfind - used to quickly find files that contain a string in a directory
 qfind () {
     find . -exec grep -l -s $1 {} \;
