@@ -99,9 +99,3 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 #To enable shims and autocompletion add to your profile:
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-#seeting up node npm to work
-for man in 1 3 5 7; do
-  ln -sf /usr/local/lib/node_modules/npm/man/man${man}/* /usr/local/share/man/man${man}
-done
-
-ln -sf /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
