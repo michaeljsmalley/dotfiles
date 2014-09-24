@@ -86,7 +86,7 @@ export EDITOR="subl"
 ### Added by the Heroku Toolbelt
 # export PATH="/usr/local/heroku/bin:$PATH"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+#export PATH="$HOME/.rbenv/bin:$PATH"
 
 #for node 
 export PATH="$HOME/.node/bin:$PATH"
