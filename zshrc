@@ -88,6 +88,9 @@ export EDITOR="subl"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 
+#for node 
+export PATH="$HOME/.node/bin:$PATH"
+
 # Path for homebrew (/usr/local/[s]bin)
 
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
