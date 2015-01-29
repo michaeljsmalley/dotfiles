@@ -1,5 +1,5 @@
 # Explicitly configured $PATH variable
-PATH=/usr/local/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin
+PATH=/usr/local/git/bin:/usr/local/opt/ruby/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/local/bin:/opt/local/sbin:/usr/X11/bin
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -92,7 +92,7 @@ export EDITOR="subl"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 
-#for node 
+#for node
 export PATH="$HOME/.node/bin:$PATH"
 
 # Path for homebrew (/usr/local/[s]bin)
@@ -103,3 +103,8 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 #To enable shims and autocompletion add to your profile:
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+eval "$(direnv hook zsh)"
+
+#https://github.com/csswizardry/inuit.css/issues/270
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
