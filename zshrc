@@ -103,7 +103,7 @@ PATH=/usr/local/bin:/usr/local/sbin:$PATH
 #To enable shims and autocompletion add to your profile:
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
 
 #https://github.com/csswizardry/inuit.css/issues/270
 export LC_ALL="en_US.UTF-8"
