@@ -46,8 +46,14 @@ else
     platform=$(uname);
     # If the platform is Linux, try an apt-get to install zsh and then recurse
     if [[ $platform == 'Linux' ]]; then
-        sudo apt-get install zsh
-        install_zsh
+        if [[ -f /etc/redhat-release ]]; then
+            sudo yum install zsh
+            install_zsh
+        fi
+        if [[ -f /etc/debian_version ]]; then
+            sudo apt-get install zsh
+            install_zsh
+        fi
     # If the platform is OS X, tell the user to install zsh :)
     elif [[ $platform == 'Darwin' ]]; then
         echo "Please install zsh, then re-run this script!"
