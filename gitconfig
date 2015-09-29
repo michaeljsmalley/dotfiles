@@ -91,6 +91,7 @@
 	#############
 	ls = ls-files
 	lsf = "!git ls-files | grep -i"
+  lgs = log --stat
 	#############
 	m = merge
 	ma = merge --abort
