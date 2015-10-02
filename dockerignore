@@ -3,3 +3,5 @@
 temp?
 !LICENCSE.md
 *.md
+.git
+.gitignore
