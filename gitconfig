@@ -35,7 +35,7 @@
 [difftool]
 	prompt = false
 [github]
-	user = pkumar
+	user = bhalothia
 	token = token
 [gitflow "prefix"]
 	feature = feature-
@@ -91,7 +91,7 @@
 	#############
 	ls = ls-files
 	lsf = "!git ls-files | grep -i"
-  lgs = log --stat
+        lgs = log --stat
 	#############
 	m = merge
 	ma = merge --abort
