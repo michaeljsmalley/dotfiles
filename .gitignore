@@ -3,3 +3,5 @@ vim/vim
 vim/.netrwhist
 chef/
 private
+vim/doc/
+vim/plugin/
