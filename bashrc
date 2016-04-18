@@ -35,3 +35,5 @@ alias ls="ls -Glah"
 export CLICOLOR=1
 # Set "ls" colors
 export LSCOLORS=Gxfxcxdxbxegedabagacad
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
