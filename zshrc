@@ -76,3 +76,5 @@ qfind () {
 if [ -f /usr/bin/vim ]; then
   export EDITOR=/usr/bin/vim
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
