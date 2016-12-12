@@ -1,0 +1,13 @@
+:set tabstop=2
+:set expandtab
+:set shiftwidth=2
+:set autoindent
+:set nu
+:set colorcolumn=80
+:set directory=~/tmp
+:source ~/.vim/bundle/vim-flake8/ftplugin/python_flake8.vim
+" for when ESLint is GTG on crick
+:let g:syntastic_javascript_checkers = ['eslint']
+execute pathogen#infect()
+autocmd BufWritePost *.py call Flake8()
+autocmd BufWritePre * :%s/\s\+$//e
