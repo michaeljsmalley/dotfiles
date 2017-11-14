@@ -13,6 +13,11 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
 
+# curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 export NVM_DIR="/Users/greggmeluski/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
@@ -25,7 +30,12 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=./node_modules/.bin:$PATH
 
 # Simple Contacts stuff
-alias stageHistory='code-push deployment history SCApp-ios Staging'
-alias prodHistory='code-push deployment history SCApp-ios Production'
-alias releaseIos='code-push promote SCApp-ios Staging Production'
-alias gotoRelease='cd ~/simplecontacts/SCApp-2.4'
+alias stageIos='code-push deployment history SCApp-ios Staging'
+alias prodIos='code-push deployment history SCApp-ios Production'
+alias stageAndroid='code-push deployment history SCApp-android Staging'
+alias prodAndroid='code-push deployment history SCApp-android Production'
+alias releaseAll='code-push promote SCApp-android Staging Production && code-push promote SCApp-ios Staging Production'
+alias gotoRelease='cd ~/simplecontacts/SCApp-2.5'
+
+alias deployStaging='ansible-playbook --inventory-file=staging deploy_website.yml'
+alias deployProduction='ansible-playbook --inventory-file=production deploy_website.yml'
