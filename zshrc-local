@@ -1,0 +1,6 @@
+alias mvim=/Applications/MacVim.app/Contents/bin/mvim
+
+export NVM_DIR="/Users/greggmeluski/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+fpath=(!/.zsh $fpath)
